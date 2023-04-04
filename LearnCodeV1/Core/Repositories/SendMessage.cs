@@ -2,7 +2,7 @@
 
 namespace LearnCodeV1.Core.Repositories
 {
-    public class SendMessage : ISendMessage
+    public class SendMessage : ISendMessage  
     {
     }
 }
