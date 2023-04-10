@@ -1,10 +1,18 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using LearnCodeV1.Core.Services;
+using LearnCodeV1.Data.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace LearnCodeV1.Areas.Main.Controllers
 {
     [Area("Main")]
     public class HomeController : Controller
     {
+        private readonly IMainService _main;
+        public HomeController(IMainService main)
+        {
+            _main = main;
+        }
+
         public IActionResult Home() => View();
 
         [HttpGet]
@@ -13,8 +21,13 @@ namespace LearnCodeV1.Areas.Main.Controllers
 
         [HttpPost]
         [Route("Register")]
-        public IActionResult RegisterByPhone(int b)
+        public IActionResult RegisterByPhone(SignUpVm signUp)
         {
+            var result = _main.RegisterUser(signUp);
+            if(result == 110)
+            {
+
+            }
             return View();
         }
 

@@ -11,9 +11,9 @@ namespace LearnCodeV1.Data.Models
         public string Password { get; set; }
         public DateTime Create { get; set; } = DateTime.Now;
         public string PhoneNumber { get; set; }
-        public bool ConfirmPhoneNumber { get; set; }
+        public bool ConfirmPhoneNumber { get; set; } = false;
         public string ConfirmCode { get; set; }
-        public bool IsDelete { get; set; }
+        public bool IsDelete { get; set; } = false;
         public string Avatar { get; set; }
     }
 }

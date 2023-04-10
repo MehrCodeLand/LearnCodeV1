@@ -11,9 +11,12 @@ namespace LearnCodeV1.Core.Repositories
             string displayName = DisplayName.Replace(" ", "_");
             string fromNumber = "0983000505";
             string url = "";
-            if(type == 1)
+            string apiKey = "S-E7VwpdRmkEkDkmepYUI3CY7fpnur9n5ciw9-nCXEU=";
+
+            if (type == 1)
             {
                 Smspattern = "3jqa90l7iyvttqf";
+                url = $"http://ippanel.com/?apikey={apiKey}&paid={Smspattern}&fnum={fromNumber}&tnum={PhoneNumber}&p1=PersonName&p2=ComplexName&v1{displayName}&v2={displayName}";
             }
 
             return 0;

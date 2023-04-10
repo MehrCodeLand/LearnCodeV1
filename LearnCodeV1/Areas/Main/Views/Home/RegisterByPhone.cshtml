@@ -1,4 +1,6 @@
-﻿
+﻿@using LearnCodeV1.Data.ViewModels
+@model SignUpVm
+
 @{
     Layout = null;
 }
@@ -28,12 +30,12 @@
 
         <div class="main">
             <div class="form-data">
-                <form class="signIn-form">
-                    <input class="phonumber" type="text" placeholder="Phonenumber">
-                    <input class="fName" type="text" placeholder="First Name">
-                    <input class="lName" type="tex" placeholder="Last Name">
-                    <input class="password" type="password" placeholder="Password">
-                    <input class="Repassword" type="password" placeholder="RePassword">
+                <form method="post" class="signIn-form">
+                    <input asp-for="PhoneNumber" class="phonumber" type="text" placeholder="Phonenumber">
+                    <input asp-for="fName" class="fName" type="text" placeholder="First Name">
+                    <input asp-for="lNmae" class="lName" type="tex" placeholder="Last Name">
+                    <input asp-for="Password" class="password" type="password" placeholder="Password">
+                    <input asp-for="RePassword" class="Repassword" type="password" placeholder="RePassword">
                     <div class="btns-form">
                         <button class="submit" type="submit">SignIn</button>
                     </div>
