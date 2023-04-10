@@ -1,0 +1,102 @@
+img {
+    height: 100px ;
+}
+body {
+    margin: 0 ;
+    padding: 0px ;
+    background-color: #E3CCAE;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 1.1rem ;
+}
+.navbar {
+    display: flex;
+    background-color: #262A56;
+    flex-direction: row;
+    padding: 1.5rem ;
+    color: #E3CCAE;
+}
+.right-nav {
+    flex: 1;
+    height: unset ;
+}
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem ;
+}
+.left-nav {
+    flex: 1;
+    height: unset ;
+}
+.midd-nav {
+    flex: 1;
+    height: unset ;
+
+    font-size: 1.4rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main {
+    background-color: #262A56;
+    margin-top: 1.5rem;
+    padding: 1rem ;
+    margin-right: 5rem ;
+    margin-left: 5rem ;
+    border-radius: 0.5rem ;
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.form-data {
+    display: flex;
+    flex-direction: column;
+    
+}
+.signIn-form {
+    display: flex;
+    flex-direction: column;
+}
+.phonumber {
+    padding: 0.4rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+.password {
+    padding: 0.4rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+.lName {
+    padding: 0.4rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+.fName {
+    padding: 0.4rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+.Repassword {
+    padding: 0.4rem;
+    margin-top: 0.8rem ;
+    margin-bottom: 0.8rem ;
+}
+.submit {
+    padding: 0.4rem 0.8rem ;
+}
+.btns-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

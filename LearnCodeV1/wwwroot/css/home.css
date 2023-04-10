@@ -1,0 +1,59 @@
+img {
+    height: 100px ;
+}
+body {
+    margin: 0 ;
+    padding: 0px ;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+    font-size: 1.1rem ;
+}
+.navbar {
+    display: flex;
+    background-color: #262A56;
+    flex-direction: row;
+    padding: 1.5rem ;
+    color: #E3CCAE;
+}
+.right-nav {
+    flex: 1;
+    height: unset ;
+}
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.8rem ;
+}
+.Login-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem ;
+    border: none;
+    background-color:  #E3CCAE;
+    font-family: monospace;
+}
+.SignIn-btn {
+    padding: 0.4rem 1rem;
+    border-radius: 0.2rem ;
+    border: none;
+    background-color: #E3CCAE;
+    font-family: monospace;
+}
+.left-nav {
+    flex: 1;
+    height: unset ;
+}
+.midd-nav {
+    flex: 1;
+    height: unset ;
+
+    font-size: 1.4rem ;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

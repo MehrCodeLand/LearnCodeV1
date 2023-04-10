@@ -1,16 +1,11 @@
-﻿
-@{
-    Layout = null;
-}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <title>Main</title>
+    <link rel="stylesheet" href="/css/Signin.css">
+    <title>Sign-In</title>
 </head>
 <body>
     <div class="container">
@@ -28,18 +23,21 @@
         </div>
 
         <div class="main">
-            <div class="all-btns">
-                <button class="register-btn">
-                    <a asp-area="Main" asp-controller="Home" asp-action="RegisterByPhone">
-                        Register
-                    </a>
-                </button>
-                <button class="register-btn">
-                    <a href="">
-                        Register
-                    </a>
-                </button>
+            <div class="form-data">
+                <form class="signIn-form">
+                    <input class="username" type="text" placeholder="Username">
+                    <input class="password" type="password" placeholder="Password">
+                    <div class="btns-form">
+                        <button class="submit" type="submit">SignIn</button>
+                    </div>
+                </form>
+                <div class="extra-btns">
+                    <button class="back-btn">
+                        Back
+                    </button>
+                </div>
             </div>
         </div>
+    </div>
 </body>
 </html>

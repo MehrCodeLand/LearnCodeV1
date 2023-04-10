@@ -2,5 +2,6 @@
 {
     public interface ISendMessage
     {
+        int SendSms(int type, string PhoneNumber, string DisplayName);
     }
 }
